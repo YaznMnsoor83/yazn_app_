@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  @apply scrollbar-hide bg-[#F0F2F5];
+
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+:root {
+  --color-bg: #f9fafb;
+  --color-text: #222;
+}
+
+
+
+body.dark-mode {
+  --color-bg: #222;
+  --color-text: #f9fafb;
+}
+
+
+.light{
+
+}.dark{
+  background: #000;
+}
